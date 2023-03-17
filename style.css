@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: block;
+    background: url("src/bg.jpg") fixed;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    justify-items: center;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.container #scene .layer {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
+    height: 100vh;
+}
+.container #scene .layer img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.login h2,
+.login1 h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 1;
+    transition: .8s;
+    margin-top: -20px;
+}
+.login{
+    position: absolute;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.25);
+    border-left: 1px solid  rgba(255, 255, 255, 0.144);
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    transition: .8s;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    bottom: 90px;
+    left: 450px;
+    align-items: center;
+    height: 350px;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+.login1{
+    position: absolute;
+    padding: 60px;
+    background: rgba(255, 255, 255, 0.315);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.199);
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.25);
+    border-left: 1px solid  rgba(255, 255, 255, 0.144);
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    color:rgb(255, 255, 255);
+    margin: 0;
+    bottom: 0px;
+    left: 450px;
+    transition: .8s;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+.login .inputBox,
+.login1 .inputBox{
+    position: relative;
+    left: -20px;
+}
+.login .inputBox input,
+.login1 .inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+    outline: none;
+    font-size: 1.25em;
+    color: #fff;
+    height: 30px;
+    border-radius: 10px;
+    background: rgba(136, 255, 0, 0.3);
+    box-shadow: inset 0 0 15px rgba(0, 89, 255, 0.308);
+    margin-bottom: 30px;
+    border: none;
+    transition: 1s;
+}
+.login .inputBox input:hover, 
+.login .inputBox input:focus,
+.login1 .inputBox input:hover,
+.login1 .inputBox input:focus{
+    background: rgba(136, 255, 0, 0.7);
+    box-shadow: inset 0 0 15px rgba(0, 89, 255, 0.8);
+}
+.submit{
+    height: 60px;
+    border-radius: 10px;
+    background: rgba(0, 89, 255, 0.4);
+    box-shadow: inset 0 0 15px rgba(59, 128, 255, 0.425);
+    margin-bottom: 30px;
+    width: 100px;
+    outline: none;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 1;
+    color: #00e6b4fd;
+    transition: 0.4s;
+}
+.submit:hover{
+    width: 110px;
+    background: rgba(0, 89, 255, 0.8);
+    box-shadow: inset 0 0 25px rgba(59, 128, 255, 0.425);
+    border-radius: 20px;
+    color: yellow;
+}
+a{
+    text-decoration: underline;
+    color:rgb(0, 0, 0);
+    transition: .7s;
+}
+.fp{
+    position: relative;
+    right: 60px;
+}
+.su{
+    position: relative;
+    left: 60px;
+}
+.login1 .submit{
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.login1 h2{
+    margin-top: -30px;
+}
+a:hover{
+    color:rgb(0, 0, 0, 0.4);
+}
+
+.login1:hover,
+.login:hover{
+    transform: translateY(-15px);
+}
+.login1:hover h2,
+.login:hover h2{
+    transform: translateY(5px);
+    letter-spacing: 3px;
+}
+.layer img{
+    transition: 2s;
+}
+.layer:nth-child(1):hover{
+    transform: translateX(-25px) translateY((10px));
+}
+.layer:nth-child(2):hover{
+    transform: translateX(-25px);
+}
+.layer:nth-child(3):hover{
+    transform: translateX(20px);
+}
+.login .inputBox ::placeholder,
+.login1 .inputBox ::placeholder
+{
+    color: rgba(255,255,255,0.5)
+}
